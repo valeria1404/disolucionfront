@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Disoluciones</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://framework-gb.cdn.gob.mx/favicon.ico" rel="shortcut icon">
+		<link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://framework-gb.cdn.gob.mx/sso/css/plugin/fiel-sat/1.0/fiel-bootstrap.all.css" />
+
+	 <script type="text/javascript" language="javascript" src="https://framework-gb.cdn.gob.mx/sso/js/plugin/fiel-sat/1.0/sat-fiel-1.0.0.source.all.js"></script>
+
+	</head>
+	<body>
+		<!-- Contenido -->
+    <main class="page">
+
+	<!-- HTML DE INVOCACIÓN -->
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="icon icon-home"></i></a></li>
+				<li class="active">Trámites</li>
+			</ol>
+			<div class="col-sm-8">
+				<h3 class="text-left">Capturar información de accionistas</h3>
+				<form id="frm-fiel" action="estructaccionria.html"
+					data-role="gob-widget-fiel" method="post">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+							    <label class="control-label" for="rfcSociedad">RFC de la sociedad:</label>
+							    <input class="form-control" id="rfcSociedad" placeholder="RFC de la sociedad" type="text">
+							  </div>
+								<div class="form-group">
+							    <label class="control-label" for="numTotalAcciones">Número total de acciones emitidas:</label>
+							    <input class="form-control" id="numTotalAcciones" placeholder="Número total de acciones emitidas" type="number">
+							  </div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+							    <label class="control-label" for="montoTotalCapFijo-01">Monto total del capital fijo:</label>
+							    <input class="form-control" id="montoTotalCapFijo" placeholder="Monto total del capital fijo" type="number">
+							  </div>
+							  <div class="form-group">
+							    <label class="control-label" for="montoTotalCapVariable">Monto total del capital varable:</label>
+							    <input class="form-control" id="montoTotalCapVariable" placeholder="Monto total del capital varable" type="number">
+							  </div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="pull-center">
+								<button type="button" class="btn btn-default" id="btnCancelarTyC"
+									data-dismiss="modal">Cancelar</button>
+								<button type="button" class="btn btn-primary" id="btonAceptarTyC">Agregar</button>
+								<button type="submit" class="btn btn-default" id="btonGuardaryCon">Guardar Y Continuar Después</button>
+							</div>
+							<div style="height: 100px"></div>
+						</div>
+				</form>
+			</div>
+			<div class="col-sm-8">
+				<h3 class="text-left">Datos</h3>
+				<div class="form-group">
+					<table class="table table-responsive">
+					 <tr>
+						 <td>RFC de la sociedad</td>
+						 <td>Número total de acciones emitidas</td>
+						 <td>Monto total del capital fijo</td>
+						 <td>Monto total del capital varable</td>
+					 </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+    </main>
+
+		<script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+		<script src="assets/js/jQuery/jquery.min.js"></script>
+  </body>
+  </html>

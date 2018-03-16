@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Disoluciones</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://framework-gb.cdn.gob.mx/favicon.ico" rel="shortcut icon">
+		<link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://framework-gb.cdn.gob.mx/sso/css/plugin/fiel-sat/1.0/fiel-bootstrap.all.css" />
+
+	 <script type="text/javascript" language="javascript" src="https://framework-gb.cdn.gob.mx/sso/js/plugin/fiel-sat/1.0/sat-fiel-1.0.0.source.all.js"></script>
+	 <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4f61afea51","applicationID":"29198635","transactionName":"JQlfFxEJCV5VQx9MQAMUQkwQAxZBWV5eShwIA0Y=","queueTime":0,"applicationTime":56,"agent":""}</script>
+	 <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+	</head>
+	<body>
+		<!-- Contenido -->
+    <main class="page">
+
+	<!-- HTML DE INVOCACIÓN -->
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="icon icon-home"></i></a></li>
+				<li class="active">Trámites</li>
+			</ol>
+			<div class="col-sm-8">
+				<h3 class="text-left">Capturar información de accionistas</h3>
+				<form id="frm-fiel" action="terminosycond.html"
+					data-role="gob-widget-fiel" method="post">
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="form-group">
+							    <label class="control-label" for="rfcSociedad">RFC de la sociedad:</label>
+							    <input class="form-control" id="rfcSociedad" placeholder="RFC de la sociedad" type="text">
+							  </div>
+								<div class="form-group">
+							    <label class="control-label" for="numTotalAcciones">Número total de acciones emitidas:</label>
+							    <input class="form-control" id="numTotalAcciones" placeholder="Número total de acciones emitidas" type="number">
+							  </div>
+							</div>
+							<div class="col-sm-6">
+								<div class="form-group">
+							    <label class="control-label" for="montoTotalCapFijo-01">Monto total del capital fijo:</label>
+							    <input class="form-control" id="montoTotalCapFijo" placeholder="Monto total del capital fijo" type="number">
+							  </div>
+							  <div class="form-group">
+							    <label class="control-label" for="montoTotalCapVariable">Monto total del capital varable:</label>
+							    <input class="form-control" id="montoTotalCapVariable" placeholder="Monto total del capital varable" type="number">
+							  </div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="pull-center">
+								<button type="button" class="btn btn-default" id="btnCancelarTyC"
+									data-dismiss="modal">Cancelar</button>
+								<button type="button" class="btn btn-primary" id="btonAceptarTyC">Agregar</button>
+								<button type="button" class="btn btn-default" id="btonGuardaryCon">Guardar Y Continuar Después</button>
+							</div>
+							<div style="height: 100px"></div>
+						</div>
+				</form>
+			</div>
+			<div class="col-sm-8">
+				<h3 class="text-left">Datos</h3>
+				<div class="form-group">
+					<table class="table table-responsive">
+					 <tr>
+						 <td>RFC de la sociedad</td>
+						 <td>Número total de acciones emitidas</td>
+						 <td>Monto total del capital fijo</td>
+						 <td>Monto total del capital varable</td>
+					 </tr>
+					</table>
+				</div>
+			</div>
+			<div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+              <h4 class="modal-title">informaciónde los accionistas</h4>
+            </div>
+            <div class="modal-body">
+								<style type="text/css">
+								input[readonly] {
+								  cursor: text;
+								  background-color: #fff;
+								}
+								</style>
+								<div class="row">
+								<hr/>
+									<form class="form-horizontal col-md-12 " autocomplete="off" id="new_user" action="datosEstructuras.html" accept-charset="UTF-8" method="post">
+											<div class="col-sm-12">
+												<div class="row">
+													<div class="col-sm-6">
+														 <button type="submit"  class="btn btn-default" id="capturaAccionista">Captura manual</button>
+													</div>
+													<div class="col-sm-6">
+															<a href="field.html" class="btn btn-default">Descargar archivo</a>
+													</div>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+									</form>
+								</div>
+							</div>
+						</div>
+</div>
+					</div>
+				</div>
+			</div>
+    </main>
+
+		<script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+		<script src="assets/js/jQuery/jquery.min.js"></script>
+		<script type="text/javascript">
+
+      $gmx(document).ready(function(){
+        $('#myModal').modal({
+          backdrop: 'static',
+          keyboard: false,
+          show:     true
+        });
+      });
+
+    </script>
+
+  </body>
+  </html>

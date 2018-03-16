@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Disoluciones</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://framework-gb.cdn.gob.mx/favicon.ico" rel="shortcut icon">
+		<link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://framework-gb.cdn.gob.mx/sso/css/plugin/fiel-sat/1.0/fiel-bootstrap.all.css" />
+	 <script type="text/javascript" language="javascript" src="https://framework-gb.cdn.gob.mx/sso/js/plugin/fiel-sat/1.0/sat-fiel-1.0.0.source.all.js"></script>
+	</head>
+	<body>
+		<!-- Contenido -->
+    <main class="page">
+
+	<!-- HTML DE INVOCACIÓN -->
+	<div class="container">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="icon icon-home"></i></a></li>
+				<li class="active">Trámites</li>
+			</ol>
+			<form id="frm-fiel" action="terminosycond.html"
+				data-role="gob-widget-fiel" method="post">
+				<div class="col-sm-8">
+					<h3 class="text-left">Estructura accionaria</h3>
+					<table id="estructura" class="table table-responsive">
+						 <tr>
+							 <td></td>
+							 <td>RFC</td>
+							 <td>Nombre</td>
+							 <td>Apellido paterno</td>
+							 <td>Apellido materno</td>
+							 <td>Capital fijo</td>
+							 <td>Capital variable</td>
+							 <td>Núero de acciones</td>
+							 <td>Porcentaje de participación</td>
+						 </tr>
+					</table>
+				</div>
+				<div class="col-sm-12">
+					<div class="pull-left">
+						<button type="button" class="btn btn-default" id="btnCancelarTyC"
+							data-dismiss="modal">Cancelar</button>
+						<button type="button" class="btn btn-primary" id="btonAceptarTyC">Editar</button>
+						<button type="button" class="btn btn-default" id="btonGuardaryCon">Guardar Y Continuar Después</button>
+					</div>
+					<div style="height: 100px"></div>
+				</div>
+			</form>
+		</div>
+	<!-- ./HTML DE INVOCACIÓN -->
+	</div>
+    </main>
+		<script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+		<script src="assets/js/jQuery/jquery.min.js"></script>
+  </body>
+  </html>
