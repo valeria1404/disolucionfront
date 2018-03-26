@@ -12,12 +12,12 @@
 <body>
 
   <div class="container">
-    <h3>Capturar información de accionistas</h3>
+    <h3>Estructura accionaria</h3>
     <div class="table-responsive">
       <div id="table" class="table-editable">
-        <span class="table-add glyphicon glyphicon-plus"></span>
         <table class="table">
           <tr>
+            <td></td>
             <th>RFC</th>
             <th>Nombre</th>
             <th>Apellido paterno</th>
@@ -28,8 +28,16 @@
             <th>Porcentaje de participación</th>
             <th></th>
             <th></th>
+            <th>  <button type="button" id="table-add" class="btn btn-primary " id="btonAceptarTyC">Agregar</button></th>
           </tr>
           <tr>
+            <td>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                </label>
+              </div>
+            </td>
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
@@ -38,6 +46,7 @@
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
             <td contenteditable="false"></td>
+            <td></td>
             <td>
               <span class="table-remove glyphicon glyphicon-remove"></span>
             </td>
@@ -46,8 +55,16 @@
               <span class="table-down glyphicon glyphicon-arrow-down"></span>
             </td>
           </tr>
+
           <!-- This is our clonable table line -->
           <tr class="hide">
+            <td>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="">
+                </label>
+              </div>
+            </td>
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
@@ -56,6 +73,7 @@
             <td contenteditable="true"></td>
             <td contenteditable="true"></td>
             <td contenteditable="false"></td>
+            <td></td>
             <td>
               <span class="table-remove glyphicon glyphicon-remove"></span>
             </td>
@@ -72,7 +90,7 @@
         <div class="pull-center" id="botones">
           <button type="button" class="btn btn-default" id="btnCancelarTyC"
             data-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary" id="btonAceptarTyC">Agregar</button>
+          <a type="button" href="10firmaestructura.html" class="btn btn-primary" id="btonAceptarTyC">Firmar</a>
         </div>
         <div style="height: 100px"></div>
         </div>
@@ -90,7 +108,7 @@
     var $BTN = $('#export-btn');
     var $EXPORT = $('#export');
 
-    $('.table-add').click(function () {
+    $('#table-add').click(function () {
     var $clone = $TABLE.find('tr.hide').clone(true).removeClass('hide table-line');
     $TABLE.find('table').append($clone);
     });
